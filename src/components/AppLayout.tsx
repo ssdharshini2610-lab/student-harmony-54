@@ -27,7 +27,7 @@ export function AppLayout({
           </span>
           <div className="leading-tight">
             <p className="font-display text-sm font-semibold tracking-tight">Student MS</p>
-            <p className="text-xs text-muted-foreground">AI &amp; Data Science</p>
+            <p className="text-xs text-sidebar-foreground/60">AI &amp; Data Science</p>
           </div>
         </div>
         <nav className="flex gap-1 overflow-x-auto px-3 pb-3 lg:flex-col lg:overflow-visible lg:pb-6">
