@@ -1,42 +1,150 @@
-# StudentSphere Pro
+# Student Management System
 
-Build a complete, functional Student Management System web application for a B.Tech Artificial Intelligence & Data Science mini project with Lovable Cloud (Supabase PostgreSQL database).
+## Project Overview
 
-Requirements:
-- Database: Create a `students` table in Supabase PostgreSQL with fields: student_id (unique string), name (text), department (text, default to AI & Data Science or selectable), year (text/number), email (text), phone (text), attendance_percentage (numeric, 0-100), marks (numeric, 0-100), created_at. Seed with 5 realistic sample student records.
-- All CRUD operations must connect directly to the database:
-  1. CREATE: Add student with validation (unique student ID, required name, valid email, valid phone, attendance 0-100, marks 0-100).
-  2. READ: View all students with search & filter, plus a dedicated student details view.
-  3. UPDATE: Edit existing student details with form validation.
-  4. DELETE: Delete student record with confirmation dialog.
-- Pages/Views:
-  1. Dashboard with summary cards (Total Students, Average Marks, Average Attendance), department distribution/charts, and recent students.
-  2. Add Student form.
-  3. View Students table with search, sorting, actions (view details, edit, delete).
-  4. Edit Student modal or dedicated page.
-  5. Student Details modal/view.
-- UI/UX: Clean, professional, modern design suitable for an engineering college mini project using Tailwind CSS, toast notifications for success/error feedback, responsive layout with sidebar or top navbar navigation.
-- Include a project README modal or documentation section detailing project title, description, features, technologies, database schema, CRUD operations, and setup instructions.
+The Student Management System is a web-based application developed for managing student information efficiently.
 
-This project was built with [Lovable](https://lovable.dev).
+The system allows users to add, view, update, and delete student records. It also provides a dashboard containing student statistics such as total students, average marks, average attendance, and department distribution.
 
-**Live app**: https://student-harmony-54.lovable.app
+The application uses a modern web interface with a PostgreSQL database for storing student information.
 
-## Build with Lovable
+## Live Application
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/29644496-e912-41d9-b074-5eddb4b0bc7b).
+https://student-harmony-54.lovable.app
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## GitHub Repository
 
-## Development
+https://github.com/ssdharshini2610-lab/student-harmony-54
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Objectives
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+- To develop a web-based student management system.
+- To maintain student records digitally.
+- To implement CRUD operations.
+- To provide search and filtering facilities.
+- To display student performance statistics.
+- To store student information in a PostgreSQL database.
+- To provide a simple and user-friendly interface.
+
+## Features
+
+### Dashboard
+
+The dashboard displays:
+
+- Total number of students
+- Average marks
+- Average attendance
+- Department distribution
+- Recent student records
+- Student performance charts
+
+### Add Student
+
+Users can add a new student by entering:
+
+- Student ID
+- Name
+- Department
+- Year
+- Email
+- Phone
+- Attendance Percentage
+- Marks
+
+### View Students
+
+The system displays all student records in a table.
+
+It supports:
+
+- Search
+- Filtering
+- Sorting
+- View details
+- Edit
+- Delete
+
+### Edit Student
+
+Existing student information can be modified and the changes are stored in the database.
+
+### Delete Student
+
+Student records can be deleted after confirmation.
+
+### Student Details
+
+Complete information about an individual student can be viewed using the student details option.
+
+## CRUD Operations
+
+| Operation | Function |
+|-----------|----------|
+| Create | Add a new student |
+| Read | View student records |
+| Update | Modify student information |
+| Delete | Remove a student record |
+
+All CRUD operations are connected to the database.
+
+## Form Validation
+
+The application validates:
+
+- Unique Student ID
+- Student name
+- Email address
+- Phone number
+- Attendance percentage between 0 and 100
+- Marks between 0 and 100
+
+## Technology Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Tailwind CSS
+- HTML
+- CSS
+- JavaScript
+
+### Database
+
+- Supabase
+- PostgreSQL
+
+### Version Control
+
+- Git
+- GitHub
+
+## Database Schema
+
+### Students Table
+
+| Field | Data Type | Description |
+|-------|-----------|-------------|
+| student_id | String | Unique student ID |
+| name | Text | Student name |
+| department | Text | Student department |
+| year | Text/Number | Academic year |
+| email | Text | Student email |
+| phone | Text | Student phone number |
+| attendance_percentage | Numeric | Attendance percentage |
+| marks | Numeric | Student marks |
+| created_at | Timestamp | Record creation date |
+
+## Application Architecture
+
+```text
+User
+  ↓
+Web Application
+  ↓
+React Frontend
+  ↓
+Database Connection
+  ↓
+Supabase PostgreSQL
